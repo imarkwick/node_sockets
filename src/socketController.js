@@ -10,7 +10,7 @@ var socket = function(io) {
 		socket.on('disconnect', function() {
 			console.log('Client disconnected');
 		});
-
+		
 	});
 
 
