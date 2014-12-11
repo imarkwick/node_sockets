@@ -1,6 +1,6 @@
 var socket = function(io) {
 
-	io.on('connection', function() {
+	io.on('connect', function(socket) {
 		console.log('Client connected');
 	});
 };

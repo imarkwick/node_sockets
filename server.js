@@ -6,7 +6,7 @@ var socket = require('./src/socketController.js')(io);
 
 app.set('view engine', 'ejs');
 
-app.use(express.static(__dirname + 'public'));
+app.use(express.static(__dirname + '/public'));
 
 app.get('/yo', function(request, response) {
 	response.render('yo');
