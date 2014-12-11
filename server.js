@@ -19,6 +19,6 @@ app.post('/yo', function(request, response) {
 
 io.emit('some event', { for:'everyone' });
 
-http.listen(port, function() {
+server.listen(port, function() {
 	console.log("Server listening on:" + port);
 });
