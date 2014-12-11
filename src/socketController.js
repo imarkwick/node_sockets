@@ -10,6 +10,10 @@ var socket = function(io) {
 		socket.on('disconnect', function() {
 			console.log('Client disconnected');
 		});
+
+		socket.on('chat message', function(msg) {
+			io.emit('chat message', msg);
+		});
 	});
 };
 
