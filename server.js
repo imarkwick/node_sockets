@@ -3,6 +3,7 @@ var app = express();
 var server = require('http').createServer(app);
 var io = require('socket.io')(server);
 var socket = require('./src/socketController.js')(io);
+var port = process.env.port || 3000;
 
 app.set('view engine', 'ejs');
 
@@ -18,6 +19,6 @@ app.post('/yo', function(request, response) {
 
 io.emit('some event', { for:'everyone' });
 
-server.listen(3000, function() {
-	console.log("Server listening on port 3000");
+http.listen(port, function() {
+	console.log("Server listening on:" + port);
 });
