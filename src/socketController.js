@@ -4,16 +4,13 @@ var socket = function(io) {
 		console.log('Client connected');
 
 		socket.on('message', function() {
-			console.log('hi der');
+			console.log('yo');
 		});
 
 		socket.on('disconnect', function() {
 			console.log('Client disconnected');
 		});
-
 	});
-
-
 };
 
 module.exports = socket;
