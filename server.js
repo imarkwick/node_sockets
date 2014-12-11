@@ -18,9 +18,6 @@ app.post('/yo', function(request, response) {
 
 io.emit('some event', { for:'everyone' });
 
-
-
-
 server.listen(3000, function() {
 	console.log("Server listening on port 3000");
 });
